@@ -31,6 +31,8 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
 const useStyles = makeStyles(styles);
 
@@ -59,6 +61,24 @@ export default function Maxi(props) {
       <Parallax small filter image={require("assets/img/maxi.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
+        <Header
+            brand=""
+            rightLinks={
+              <List className={classes.list}>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.registerNavLink}
+                    onClick={e => e.preventDefault()}
+                    color="rose"
+                    round
+                  >
+                    Register
+                  </Button>
+                </ListItem>
+              </List>
+            }
+          />
           <div className={classes.container}>
             <div className={classes.description}>
               <p>
@@ -75,7 +95,7 @@ export default function Maxi(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "Images",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
@@ -107,7 +127,7 @@ export default function Maxi(props) {
                       )
                     },
                     {
-                      tabButton: "Work",
+                      tabButton: "LeaderBoard",
                       tabIcon: Palette,
                       tabContent: (
                         <GridContainer justify="center">
@@ -142,43 +162,6 @@ export default function Maxi(props) {
                           </GridItem>
                         </GridContainer>
                       )
-                    },
-                    {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
                     }
                   ]}
                 />
@@ -187,7 +170,6 @@ export default function Maxi(props) {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
