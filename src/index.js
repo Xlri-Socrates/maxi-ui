@@ -11,6 +11,8 @@ import LandingPage from "views/LandingPage/LandingPage.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import Maxi from "views/maxi/Maxi.js";
+import MainPage from "views/MainPage/MainPage.js";
+
 
 var hist = createBrowserHistory();
 
@@ -21,7 +23,9 @@ ReactDOM.render(
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/maxi" component={Maxi} />
+      <Route path="/main-page" component={MainPage} />
       <Route path="/" component={Components} />
+      
     </Switch>
   </Router>,
   document.getElementById("root")

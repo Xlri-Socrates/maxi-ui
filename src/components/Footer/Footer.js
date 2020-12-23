@@ -33,16 +33,16 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
+                href="https://maxi-xlri.in/"
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                Register
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
+                href="https://maxi-xlri.in/"
                 className={classes.block}
                 target="_blank"
               >
@@ -51,35 +51,33 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
+                href="https://maxi-xlri.in/"
                 className={classes.block}
                 target="_blank"
               >
-                Blog
+                Events
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
+                href="https://maxi-xlri.in/"
                 className={classes.block}
                 target="_blank"
               >
-                Licenses
+                FAQ
               </a>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()} , made by{" "}
           <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
+            href="https://maxi-xlri.in/"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            {"42nd"} MAXI RAW Operations Team 
           </a>{" "}
-          for a better web.
         </div>
       </div>
     </footer>
